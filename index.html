@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ToPa3D RESolute</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="leaflet/leaflet.css">
+
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-100">
+        <li class="text">100</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-101">
+        <li class="text">101</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-102">
+        <li class="text">102</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-103">
+        <li class="text">103</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-104">
+        <li class="text">104</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-105">
+        <li class="text">105</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-106">
+        <li class="text">106</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-107">
+        <li class="text">107</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-108">
+        <li class="text">108</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-109">
+        <li class="text">109</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-110">
+        <li class="text">110</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-111">
+        <li class="text">111</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-112">
+        <li class="text">112</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-113">
+        <li class="text">113</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-114">
+        <li class="text">114</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-115">
+        <li class="text">115</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-116">
+        <li class="text">116</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-117">
+        <li class="text">117</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-118">
+        <li class="text">118</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName">
+
+  </h1>
+  
+</div>
+
+<div id=logoImage>
+  <a class="imagelogo" href="https://topa3d.com">
+    <img  alt="Image" src="https://topa3d.com/wp-content/uploads/2019/12/ToPa3D_LOGO.png" width="46" height="36">
+
+  </a>
+</div>
+
+<div id="contentLayout" class="topaskin" style="background: rgb(255, 255, 255);border: 1px solid rgb(0, 0, 0);cursor: default;height: 292px;right: 1px;position: absolute;top: 0%;visibility: inherit;width: 40%;pointer-events: auto;transform-origin: 50% 50%;outline: none;margin-top: 40px;opacity: 0.8; overflow:auto;"  tabindex="0">
+  <div id="mapcontainer" class="leaflet-pane leaflet-map-pane" style="transform: translate3d(205.203px, -52.8203px, 0px);">
+    <div class="leaflet-pane leaflet-tile-pane">
+      <div class="leaflet-layer " style="z-index: 1; opacity: 1;">
+        <div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 17; transform: translate3d(-129px, -9px, 0px) scale(2);"></div>
+        <div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 18; transform: translate3d(-275px, -219px, 0px) scale(1);"><img alt="" role="presentation" src="images/maptiles/FloorPlan01/9/257_256.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(326px, 220px, 0px); opacity: 1;">
+          <img alt="" role="presentation" src="images/maptiles/FloorPlan01/9/257_257.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(326px, 476px, 0px); opacity: 1;">
+          <img alt="" role="presentation" src="images/maptiles/FloorPlan01/9/256_256.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(70px, 220px, 0px); opacity: 1;">
+          <img alt="" role="presentation" src="images/maptiles/FloorPlan01/9/258_256.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(582px, 220px, 0px); opacity: 1;">
+          <img alt="" role="presentation" src="images/maptiles/FloorPlan01/9/256_257.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(70px, 476px, 0px); opacity: 1;">
+          <img alt="" role="presentation" src="images/maptiles/FloorPlan01/9/258_257.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(582px, 476px, 0px); opacity: 1;">
+          <img alt="" role="presentation" src="images/maptiles/FloorPlan01/9/259_256.jpg" class="leaflet-tile  leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(838px, 220px, 0px); opacity: 1;">
+          <img alt="" role="presentation" src="images/maptiles/FloorPlan01/9/259_257.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(838px, 476px, 0px); opacity: 1;"><img alt="" role="presentation" src="" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(-186px, 220px, 0px); opacity: 1;">
+          <img alt="" role="presentation" src="" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(-186px, 476px, 0px); opacity: 1;"></div>
+      </div>
+    </div>
+    <div class="leaflet-pane leaflet-shadow-pane"></div>
+    <div class="leaflet-pane leaflet-marker-pane mapmarker">
+      <img src="images/_ggMapPinBlue.png" class="leaflet-marker-icon markerscene leaflet-zoom-animated leaflet-interactive" data-id="0-100" title="100" alt="" tabindex="0" style="margin-left: -20px; margin-top: -40px; width: 40px; height: 40px; transform: translate3d(-150px, 143px, 0px); z-index: 143;">
+      <img src="images/_ggMapPinBlue.png" class="leaflet-marker-icon markerscene leaflet-zoom-animated leaflet-interactive" data-id="1-101" title="101" alt="" tabindex="0" style="margin-left: -20px; margin-top: -40px; width: 40px; height: 40px; transform: translate3d(-97px, 171px, 0px); z-index: 171;">
+      <img src="images/_ggMapPinBlue.png" class="leaflet-marker-icon markerscene leaflet-zoom-animated leaflet-interactive" data-id="2-102" title="102" alt="" tabindex="0" style="margin-left: -20px; margin-top: -40px; width: 40px; height: 40px; transform: translate3d(-42px, 142px, 0px); z-index: 142;">
+      <img src="images/_ggMapPinBlue.png" class="leaflet-marker-icon markerscene leaflet-zoom-animated leaflet-interactive" data-id="3-103" title="103" alt="" tabindex="0" style="margin-left: -20px; margin-top: -40px; width: 40px; height: 40px; transform: translate3d(8px, 166px, 0px); z-index: 166;">
+      <img src="images/_ggMapPinBlue.png" class="leaflet-marker-icon markerscene leaflet-zoom-animated leaflet-interactive" data-id="4-104" title="104" alt="" tabindex="0" style="margin-left: -20px; margin-top: -40px; width: 40px; height: 40px; transform: translate3d(87px, 175px, 0px); z-index: 175;">
+      <img src="images/_ggMapPinBlue.png" class="leaflet-marker-icon markerscene leaflet-zoom-animated leaflet-interactive" data-id="5-105" title="105" alt="" tabindex="0" style="margin-left: -20px; margin-top: -40px; width: 40px; height: 40px; transform: translate3d(117px, 137px, 0px); z-index: 137;">
+      <img src="images/_ggMapPinBlue.png" class="leaflet-marker-icon markerscene leaflet-zoom-animated leaflet-interactive" data-id="6-106" title="106" alt="" tabindex="0" style="margin-left: -20px; margin-top: -40px; width: 40px; height: 40px; transform: translate3d(169px, 176px, 0px); z-index: 176;">
+      <img src="images/_ggMapPinBlue.png" class="leaflet-marker-icon markerscene leaflet-zoom-animated leaflet-interactive" data-id="7-107" title="107" alt="" tabindex="0" style="margin-left: -20px; margin-top: -40px; width: 40px; height: 40px; transform: translate3d(222px, 137px, 0px); z-index: 137;">
+      <img src="images/_ggMapPinBlue.png" class="leaflet-marker-icon markerscene leaflet-zoom-animated leaflet-interactive" data-id="8-108" title="108" alt="" tabindex="0" style="margin-left: -20px; margin-top: -40px; width: 40px; height: 40px; transform: translate3d(279px, 173px, 0px); z-index: 173;">
+      <img src="images/_ggMapPinBlue.png" class="leaflet-marker-icon markerscene leaflet-zoom-animated leaflet-interactive" data-id="9-109" title="109" alt="" tabindex="0" style="margin-left: -20px; margin-top: -40px; width: 40px; height: 40px; transform: translate3d(326px, 135px, 0px); z-index: 135;">
+      <img src="images/_ggMapPinBlue.png" class="leaflet-marker-icon markerscene leaflet-zoom-animated leaflet-interactive" data-id="10-110" title="110" alt="" tabindex="0" style="margin-left: -20px; margin-top: -40px; width: 40px; height: 40px; transform: translate3d(380px, 176px, 0px); z-index: 176;">
+      <img src="images/_ggMapPinBlue.png" class="leaflet-marker-icon markerscene leaflet-zoom-animated leaflet-interactive" data-id="11-111" title="111" alt="" tabindex="0" style="margin-left: -20px; margin-top: -40px; width: 40px; height: 40px; transform: translate3d(435px, 132px, 0px); z-index: 132;">
+      <img src="images/_ggMapPinBlue.png" class="leaflet-marker-icon markerscene leaflet-zoom-animated leaflet-interactive" data-id="12-112" title="112" alt="" tabindex="0" style="margin-left: -20px; margin-top: -40px; width: 40px; height: 40px; transform: translate3d(489px, 171px, 0px); z-index: 171;">
+      <img src="images/_ggMapPinBlue.png" class="leaflet-marker-icon markerscene leaflet-zoom-animated leaflet-interactive" data-id="13-113" title="113" alt="" tabindex="0" style="margin-left: -20px; margin-top: -40px; width: 40px; height: 40px; transform: translate3d(542px, 136px, 0px); z-index: 171;">
+      <img src="images/_ggMapPinBlue.png" class="leaflet-marker-icon markerscene leaflet-zoom-animated leaflet-interactive" data-id="14-114" title="114" alt="" tabindex="0" style="margin-left: -20px; margin-top: -40px; width: 40px; height: 40px; transform: translate3d(594px, 172px, 0px); z-index: 171;">
+      <img src="images/_ggMapPinBlue.png" class="leaflet-marker-icon markerscene leaflet-zoom-animated leaflet-interactive" data-id="15-115" title="115" alt="" tabindex="0" style="margin-left: -20px; margin-top: -40px; width: 40px; height: 40px; transform: translate3d(628px, 177px, 0px); z-index: 171;">
+      <img src="images/_ggMapPinBlue.png" class="leaflet-marker-icon markerscene leaflet-zoom-animated leaflet-interactive" data-id="16-116" title="116" alt="" tabindex="0" style="margin-left: -20px; margin-top: -40px; width: 40px; height: 40px; transform: translate3d(646px, 143px, 0px); z-index: 171;">
+      <img src="images/_ggMapPinBlue.png" class="leaflet-marker-icon markerscene leaflet-zoom-animated leaflet-interactive" data-id="17-117" title="117" alt="" tabindex="0" style="margin-left: -20px; margin-top: -40px; width: 40px; height: 40px; transform: translate3d(684px, 163px, 0px); z-index: 171;">
+      <img src="images/_ggMapPinBlue.png" class="leaflet-marker-icon markerscene leaflet-zoom-animated leaflet-interactive" data-id="18-118" title="118" alt="" tabindex="0" style="margin-left: -20px; margin-top: -40px; width: 40px; height: 40px; transform: translate3d(729px, 144px, 0px); z-index: 171;">
+    </div>
+    <div class="leaflet-pane leaflet-tooltip-pane"></div>
+<div class="leaflet-pane leaflet-popup-pane"></div>
+<div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(65781.3px, 65733.8px, 0px) scale(256);"></div>
+</div>
+<div class="leaflet-control-container">
+  
+  <div class="leaflet-top leaflet-right"></div>
+  <div class="leaflet-bottom leaflet-left"></div>
+  <div class="leaflet-bottom leaflet-right"></div>
+</div>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<form id="commentForm" style="display: none">
+  <h2>Enter your comment</h2>
+  <textarea id="commentTextarea"></textarea>
+  <button type="submit">Ok</button>
+</form>
+
+  
+
+<script src="vendor/es5-shim.js"></script>
+<script src="vendor/eventShim.js"></script>
+<script src="vendor/requestAnimationFrame.js" ></script>
+<script src="vendor/classList.js"></script>
+<script src="vendor/fastclick.js" ></script>
+<script src="vendor/easing.js" ></script>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
